@@ -68,4 +68,4 @@ Run command
 
 
 **NOTES:**
-- Can set this command to run in period by scheduler (cron job)
+- Can set this command to run by scheduler (cron job) periodly
