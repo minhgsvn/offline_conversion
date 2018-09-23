@@ -11,7 +11,7 @@ Prerequisites
     2. Event Set Id
     3. Facebook App
     4. System User Access Token
-    5. Run the Endpoint from repos https://github.com/joecombopiano/fake-receipt-service
+    5. Run the Endpoint service from repos https://github.com/joecombopiano/fake-receipt-service 
 
 
 INSTALLATION
