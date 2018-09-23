@@ -24,13 +24,24 @@ class OfflineConversionsConverter extends Model
                 $value = ArrayHelper::getValue($data, $fileKey, "");
                 switch ($fbkey) {
                     case "event_name":
-                        $value = in_array($value, $defaultEvents) ? $value : "Other";
+                        $value = in_array($value, $defaultEvents) ? $value : $fileKey;
                         break;
                     case "event_time":
                         $value = is_numeric($value) ? $value : strtotime($value);
                         break;
 					case "currency":
-						$value = empty($value) ? 'USD' : $value;
+						$value = empty($value) ? $fileKey : $value;
+						break;
+					case "content_ids":
+						// get sku of every product item
+						$temp = [];
+						if (is_array($value)) {
+							foreach ($value as $item) {
+								$temp[] = $item['sku'];
+							}
+						}
+						$value = $temp;
+						break;
                     default :
                         break;
                 }
