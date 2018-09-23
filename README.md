@@ -49,13 +49,14 @@ Edit in the file `config/mappings.json`
 {
   "mapping": {
     "match_keys.email" : "customer.email",
-    "match_key.phone" : "customer.phoneNumber",
     "match_keys.ln" : "customer.lastName",
     "match_keys.fn" : "customer.firstName",
     "event_name" : "Purchase",
     "event_time" : "transactionDate",
     "currency" : "USD",
-    "value" : "total"
+    "value" : "total",
+    "order_id" : "transactionID",
+    "content_ids" : "lineItems"
   }
 }
 ```
