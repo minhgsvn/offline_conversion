@@ -42,6 +42,8 @@ return [
 
 ### Mapping settings
 This setting use to map json key to Offline conversion keys
+Edit in the file `config/mappings.json` 
+
 ```json
 {
   "mapping": {
