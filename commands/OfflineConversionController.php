@@ -140,7 +140,8 @@ class OfflineConversionController extends Controller
 			// define options
 			$optArray = array(
 				CURLOPT_URL => $url,
-				CURLOPT_RETURNTRANSFER => true
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_SSL_VERIFYPEER => false,
 			);
 			// apply those options
 			curl_setopt_array($ch, $optArray);
