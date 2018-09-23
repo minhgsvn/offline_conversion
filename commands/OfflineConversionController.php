@@ -21,7 +21,7 @@ use Facebook\Exceptions\FacebookSDKException;
  */
 class OfflineConversionController extends Controller
 {
-	const MAX_EVENTS_UPLOAD = 10;
+	const MAX_EVENTS_UPLOAD = 2000;
 	/**
 	 * This command use to upload json data to an Offline Event Set
 	 *
