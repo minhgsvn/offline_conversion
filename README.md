@@ -56,7 +56,8 @@ Edit in the file `config/mappings.json`
     "currency" : "USD",
     "value" : "total",
     "order_id" : "transactionID",
-    "content_ids" : "lineItems"
+    "content_ids" : "lineItems",
+    "custom_data.event_source" : "in_store"
   }
 }
 ```
