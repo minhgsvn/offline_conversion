@@ -42,6 +42,9 @@ class OfflineConversionsConverter extends Model
 						}
 						$value = $temp;
 						break;
+					case "custom_data.event_source":
+						$value = $fileKey;
+						break;
                     default :
                         break;
                 }
